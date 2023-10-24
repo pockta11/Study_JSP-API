@@ -1,4 +1,4 @@
-package Study_Web_API.TPC_API.src.kr.project;
+package kr.project;
 
 import java.awt.Choice;
 import java.awt.Color;

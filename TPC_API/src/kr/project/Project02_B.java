@@ -1,8 +1,8 @@
-package Study_Web_API.TPC_API.src.kr.project;
+package kr.project;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import Study_Web_API.TPC_API.src.kr.soldesk.*;
+import kr.soldesk.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -47,7 +47,7 @@ public class Project02_B {
 			String fileName1 = dPath1.substring(dPath1.lastIndexOf("/") + 1);
 
 			// 다운로드
-			Runnable r = new kr.soldesk.DownloadBroker(dPath1, fileName1);
+			Runnable r = new DownloadBroker(dPath1, fileName1);
 			Thread dLoad = new Thread(r); // 스레드 구현
 			dLoad.start();
 			
